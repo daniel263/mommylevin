@@ -8,7 +8,7 @@
                 </div>
             </div>
         <div class="cake-img-wrap">
-            <img :src="cake.img" alt="flavour" class="image" height="300" width="300" >
+            <img :src="cake.img" alt="flavour" class="image" height="400" width="400" >
         </div>
         <div class="cake-detail">
             <h2>{{cake.flavour}}</h2>
@@ -16,6 +16,7 @@
         </div>
     </div>
     </section>
+    
      
 </main>
  
@@ -64,7 +65,14 @@ export default {
                     img:require('../assets/redvev.jpeg'),
                     id: 8 
                 },
-            ]
+
+            ],
+            
+                
+     
+                
+               
+            
     }
 }
 }
@@ -80,37 +88,51 @@ export default {
 body{
     font-family: 'montseratt', sans-serif;
 }
+
 main {
-    width:100vw;
-    min-height: 100vh;
+    width:100%;
+    min-height: 100%;
     overflow: hidden;
-    background-color:#eee ;
+    background-color:#fff ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .gallery{
     display: grid;
-    grid-template-columns: auto auto ;
-    
-    padding: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    padding: 15px;
     margin:0 auto;
-    border: 1px solid #ccc;
 }
 .cakes{
     width: 100%;
-    padding:25px;
+    padding:15px;
     }
 .cake-inner{
     position: relative;
-    padding: 5px;
+    padding: 2px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0,0.25);
 }
-
+.cake-cake-img-wrap{
+    width: 400px;
+}
 
 .cake-detail{
     padding:25px;
     margin: 0px -25px -25px;
    
 }
+
+
+@media (max-width:991px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+   .cake-cake-img-wrap{
+    width: 500px;
+} 
+
+}
+
 </style>
