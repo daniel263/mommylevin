@@ -65,6 +65,12 @@ export default {
                     img:require('../assets/redvev.jpeg'),
                     id: 8 
                 },
+                {
+                    flavour: 'Strawberry Cup Cakes',
+                    img: require('../assets/cupcakes.jpeg'),
+                    id:9
+
+                }
 
             ],
             
@@ -82,7 +88,7 @@ export default {
     margin-left:0; 
     padding: 0;
     box-sizing: border-box;
-    
+    font-family:coomic-sans;
 
 }
 body{

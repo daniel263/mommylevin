@@ -12,7 +12,7 @@
     <router-link :to="{name:'Cakegallery'}">View our Cakes </router-link>
   </div>
   <div class="imgbox">
-    <img src="../assets/slice.jpeg" alt="Cake Slice" width="400" height="400" >
+    <img src="../assets/land.jpeg" alt="Cake Slice" width="500" height="400" >
   </div>
 </div>
 </section>
@@ -35,7 +35,7 @@ section{
   margin-top: -50px;
 
   min-height: 100%;
-  padding:100px;
+  padding:90px;
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -52,7 +52,7 @@ section{
 .content .textbox{
   position:relative;
   max-width: 800px;
-  margin-left: 250px;
+  margin-left: 300px;
 }
 .content .textbox h2{
   color: #1ca1f8;

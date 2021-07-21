@@ -136,6 +136,17 @@ footer .footer-col{
   position: relative;
   font-weight: 500x;
 }
+.footer-col h4::before{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: rgb(6, 41, 41);
+  height: 2px;
+  box-sizing: border-box;
+  width:50%;
+
+}
 @media(max-width:991px){
   #nav{
     text-align:end;
